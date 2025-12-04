@@ -67,8 +67,8 @@ body {
     padding: 30px;
     position: relative;
     display: flex;
-    justify-content: center; /* center content horizontally */
-    align-items: center;     /* center content vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .content-box,
@@ -76,13 +76,19 @@ body {
     width: 75%;
     max-width: 600px;
     background: white;
+
     border: 2px solid #821414;
+    border-left: 12px solid red;
+
     border-radius: 12px;
     padding: 25px;
     font-size: 18px;
-    text-align: center;     
+    text-align: center;
     display: none;
     position: relative;
+
+    /* Extra aesthetic */
+    box-shadow: 0 0 10px #00000055;
 }
 
 .content-box {
@@ -94,7 +100,9 @@ body {
     font-weight: bold;
 }
 
-input[type="radio"] { display: none; }
+input[type="radio"] {
+    display: none;
+}
 
 #default:checked ~ .container .content .content-box {
     display: flex;
@@ -107,7 +115,6 @@ input[type="radio"] { display: none; }
 #profile5:checked ~ .container .content #profile5-info {
     display: block;
 }
-
 #profile1:checked ~ .container .content .content-box,
 #profile2:checked ~ .container .content .content-box,
 #profile3:checked ~ .container .content .content-box,
@@ -117,12 +124,12 @@ input[type="radio"] { display: none; }
 }
 
 .profile-pic {
-    width: 150px;      
-    height: 150px;     
+    width: 150px;
+    height: 150px;
     border: 2px solid #821414;
-    border-radius: 12px; /* rounded rectangle */
-    margin: 0 auto 20px auto; /* center + spacing */
-    overflow: hidden; 
+    border-radius: 12px;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,6 +144,7 @@ input[type="radio"] { display: none; }
 .profile-info h2 {
     margin-bottom: 15px;
     font-size: 24px;
+    color: #821414;
 }
 
 .profile-info p {
