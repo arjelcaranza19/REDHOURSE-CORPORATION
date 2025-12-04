@@ -77,8 +77,7 @@ body {
     max-width: 600px;
     background: white;
 
-    border: 2px solid #821414;
-    border-left: 12px solid red;
+    border: 5px solid #821414;
 
     border-radius: 12px;
     padding: 25px;
@@ -87,8 +86,7 @@ body {
     display: none;
     position: relative;
 
-    /* Extra aesthetic */
-    box-shadow: 0 0 10px #00000055;
+    box-shadow: 0 0 12px #00000066;
 }
 
 .content-box {
@@ -115,6 +113,7 @@ input[type="radio"] {
 #profile5:checked ~ .container .content #profile5-info {
     display: block;
 }
+
 #profile1:checked ~ .container .content .content-box,
 #profile2:checked ~ .container .content .content-box,
 #profile3:checked ~ .container .content .content-box,
@@ -126,7 +125,7 @@ input[type="radio"] {
 .profile-pic {
     width: 150px;
     height: 150px;
-    border: 2px solid #821414;
+    border: 3px solid #821414;
     border-radius: 12px;
     margin: 0 auto 20px auto;
     overflow: hidden;
